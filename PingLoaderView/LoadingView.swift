@@ -90,7 +90,7 @@ class LoadingView: UIView {
         layer.addSublayer(bigDotLayer)
         layer.addSublayer(textLayer)
         bigDotLayer.drop()
-        NSTimer.scheduledTimerWithTimeInterval(0.8, target: self, selector: #selector(LoadingView.wobbleOval), userInfo: nil, repeats: false)
+        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(LoadingView.wobbleOval), userInfo: nil, repeats: false)
     }
     
     func wobbleOval() {

@@ -53,7 +53,7 @@ class BigDotLayer: CAShapeLayer {
         let expandAnimation: CABasicAnimation = CABasicAnimation(keyPath: "path")
         expandAnimation.fromValue = dotPathSmall.CGPath
         expandAnimation.toValue = dotPathLarge.CGPath
-        expandAnimation.duration = 0.8
+        expandAnimation.duration = 0.5
         expandAnimation.fillMode = kCAFillModeForwards
         expandAnimation.removedOnCompletion = false
         addAnimation(expandAnimation, forKey: nil)
@@ -105,7 +105,7 @@ class BigDotLayer: CAShapeLayer {
         explodeAnimation.toValue = dotPathExplode.CGPath
         explodeAnimation.duration = 0.5
         explodeAnimation.fillMode = kCAFillModeForwards
-        explodeAnimation.removedOnCompletion = true
+        explodeAnimation.removedOnCompletion = false
         addAnimation(explodeAnimation, forKey: nil)
     }
     

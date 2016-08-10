@@ -17,11 +17,12 @@ class TextLayer: CATextLayer {
         let bigDot = BigDotLayer()
         let center:CGPoint = CGPointMake(CGRectGetMidX(bigDot.dotPathLarge.bounds), CGRectGetMidY(bigDot.dotPathLarge.bounds))
         position = center
-        font = "Helvetica-Bold";
+        font = "HelveticaNeue-Thin";
         fontSize = 25.0;
         borderColor = UIColor.clearColor().CGColor;
         borderWidth = 1;
         alignmentMode = kCAAlignmentCenter;
+        contentsScale = UIScreen.mainScreen().scale
     }
     
     required init?(coder aDecoder: NSCoder) {
